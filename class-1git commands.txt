@@ -1,0 +1,88 @@
+
+
+Create a folder in desktop -> open the folder -> right click inside the folder and click on git bash
+
+
+1) git init   (git initilize (start the git in the folder) (once) 
+
+2) git config --global user.name "akshat"                (it will set the name as akshat in software to identify who is working)  (once throughout)
+
+3) git config --global user.email "akshat@gmail.com"     (it will set the email as akshat@gmail.com in software to identify who is working)(once)
+
+4) git config --list   (to see the configuration of your git) 
+
+5) touch file1   (creates an empty file in folder)
+
+6) touch file2 (creates an empty file in folder)
+
+7) git status   (will show the status of the files in my folder)
+
+8) git add .    (put the files in the staging area)
+
+9) git status 
+
+10) git commit -m"commit message"    (put file from staging area to local repo )
+
+11) cat >>file1     (updating the file1)
+hello akshat  
+
+to exit press ctrl + D
+
+12) git status
+
+13) git add .
+
+14) git commit -m "commit message1"
+
+15) git status
+
+16) git log    (gives all the commit messages (versions) in detail)
+
+17) git log --oneline  (give all the commit messages in oneline)
+
+18) git log --oneline --graph --all    (give all the commit messages in graph format)
+
+################################## Removing the changes which happened in last commit #####################
+
+
+
+19) git log --oneline   (copy the last commit id)
+
+20) git revert <<commit id>>
+
+
+panel will open press i
+
+add some content 
+
+press esc and :wq  (save and exit)
+
+
+21) cat file1
+
+you will see that hello akshat is deleted and again it is a blank file
+
+################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
