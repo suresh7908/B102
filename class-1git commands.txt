@@ -64,6 +64,140 @@ you will see that hello akshat is deleted and again it is a blank file
 
 ################################################################################################################
 
+################### IGNORE SINGLE  FILE ########################################
+
+
+22) touch .gitignore      (this is the file where you would be putting the files which you want to ignore)
+
+23) touch users.log   
+
+24) cat >>.gitignore
+users.log            
+
+press ctrl + D to exit 
+
+25) git add .gitignore    (putting the .gitignore into the staging area)
+
+26) git commit -m"created .gitignore file"
+
+27) cat >>users.log
+akshat logged in
+
+press ctrl + D to exit
+
+28) git status    (you will see that users.log is not been tracked because we have ignored it)
+
+####################################################################################
+
+
+######################IGNORE MULTIPLE FILES#############################
+
+29) cat > .gitignore
+*.log
+
+press ctrl + D to exit
+
+30) touch james.log edureka.log
+
+31) git status    (you will see that james.log and edureka.log is not tracked )
+
+
+######################################################################################
+
+
+
+##########################  GITHUB.COM ###############################################
+
+
+
+32) Create a github account
+
+33) go to settings -> developer setting https://github.com/settings/apps -> personal access token -> create a new token with repo (tick mark)
+
+33.1) create a new repo 
+
+34) copy the personal access token and keep somewhere safe
+
+35) git remote add origin <<central git url>>    (it will add central git repo url (created above) as a origin)
+
+36) git push -u origin master  
+
+37) a pop up will come where select token and paste the token there
+
+38) now if you go to github.com -> repo (created in 33.1) you will see all the files are now copied there as well
+
+
+#######################################################################################################
+
+##################### SEE THE DIFFERENCE IN THE CHANGES MADE IN FILES AFTER IT IS PUT IN THE STAGING AREA########
+
+
+39) touch file9
+
+40) git add .
+
+41) cat >file9
+hello world
+
+42) git diff     (you will see that hello world was added up)
+
+
+#####################################################################################################################
+
+###########################SEE THE DIFFERENCE IN THE CHANGES MADE IN FILES AFTER IT IS COMMITED (CHANGES BETWEEN FILES IN STAGING ARE AND LOCAL REPO)##
+
+
+43) git commit -m "file9 blank created above is put in local repo"
+
+44) git add .    (put the updated file9 in staging area)
+
+45) git diff --staged file9  (this will give the difference in the content of the files which is there in my local repo and staging area)
+
+###################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
