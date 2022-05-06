@@ -155,6 +155,95 @@ hello world
 
 ###################################################################################################################################
 
+######################IF GITHUB IS UPDATED AND NOT GIT) #################################USE OF PULL COMMAND ######################
+
+46) go to github.com -> go to your repo -> select any file -> edit the file -> commit it
+
+47) touch file10       (use this in git bash in your laptop) 
+
+48) git add .
+
+49) git commit -m"created file 10"
+
+50) git push -u origin master  (you will get an error saying there is some update in github for that we need to first update our local repo)
+
+51) git pull      (this will pull the files from the github repo and update your local repo )
+
+52) git push -u   (your github would also be updated with this command . now commit you can see the commited messages in sno 49) 
+
+
+###############################################################################################################################
+
+
+
+
+########################## WORKING WITH BRANCHES #################################################################
+
+
+53) git branch branch1    (it will create a branch with name branch1)
+
+54) git branch    (it will give you the list of the branches and * means the current branch)
+
+55) git checkout branch1   (this command will move you to the branch1 from master)
+
+56) touch fileinbranch1 
+
+57) git add . 
+
+58) git commit -m "my first commit in branch1"
+
+59) git checkout master    (come to master branch)
+
+60) touch fileinmaster 
+
+61) ls     (you will not see fileinbranch1 because it was created in branch1 and not in master)
+
+62) git add .
+
+63) git commit -m"created fileinmaster"
+
+64) git checkout branch1
+
+65) ls     (here you will not see fileinmaster because it was created after branch1 was created and created in master  branch)
+
+(but you will see fileinbranch1) 
+
+66) git checkout master
+
+67) git merge branch1     (now your branch1 would be merged with master)
+
+68) ls    (you will see fileinmaster and fileinbranch1)
+
+###########################################RESOLVING THE CONFLICT ERROR (IN CASE WE CREATE SAME FILE IN BRANCH AND MASTER)######
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
